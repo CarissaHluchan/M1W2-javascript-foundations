@@ -1,5 +1,3 @@
-
-
 function createDragon (dragonName, dragonRider, dragonTemperment) {
   var dragon = {
     name: dragonName,
@@ -11,11 +9,9 @@ function createDragon (dragonName, dragonRider, dragonTemperment) {
   return dragon
 }
 
-
 function greetRider(dragon) {
   return `Hi, ${dragon.rider}!`;
 }
-
 
 function eat(dragon) {
   dragon.timesEaten += 1;
@@ -37,15 +33,12 @@ function findFireBreathers(arrOfDragons) {
       fireBreathers.push(arrOfDragons[i]);
     }
   };
-
 // what does it take in - an array of dragon objects
 // does it return anything - an array of dragon objects
 // what is it's purpose - find all dragons that are aggressive 
 // assign them firebreathers return an array of all the firebreathers
 return fireBreathers;
 }
-
-
 
 // what does it take in
 // does it return anything

@@ -12,16 +12,24 @@ function createBirthday(name, month, day) {
 
 
 function celebrateBirthday(birthday) {
-// what does it take in - an object
-// what is it's purpose - sends a message to celebrate a given persons birthday
-// does it return anything - returns a string with a date and a name
-return `Today is ${birthday.month}/${birthday.day}! Happy birthday, ${birthday.name}!`
+    // what does it take in - an object
+    // what is it's purpose - sends a message to celebrate a given persons birthday
+    // does it return anything - returns a string with a date and a name
+    return `Today is ${birthday.month}/${birthday.day}! Happy birthday, ${birthday.name}!`
 }
 
-
-// what does it take in - a list of objects
-// does it return anything -
-// what is it's purpose -
+function countBirthdays(birthdays, month) {
+    var birthdayCount = 0;
+    for (var i = 0; i < birthdays.length; i++) {
+        if (birthdays[i].month === month) {
+           birthdayCount += 1;
+        }
+    }
+    return birthdayCount
+}
+// what does it take in - 2 parms birthdays and month
+// does it return anything - countBirthdays
+// what is it's purpose - a count of all the birthdays in a month
 
 
 
@@ -33,4 +41,5 @@ return `Today is ${birthday.month}/${birthday.day}! Happy birthday, ${birthday.n
 module.exports = {
     createBirthday,
     celebrateBirthday,
-  };
+    countBirthdays,
+};
