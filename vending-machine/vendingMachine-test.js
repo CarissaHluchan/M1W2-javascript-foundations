@@ -96,7 +96,7 @@ describe('vending machine functions', function() {
       assert.deepEqual(total, expectedTotal)
     })
 
-    it.skip('can calculate the total of two coins', function() {
+    it('can calculate the total of two coins', function() {
       var looseChange = [0.25, 0.10]
       var expectedTotal = 0.35
 
@@ -105,7 +105,7 @@ describe('vending machine functions', function() {
       assert.deepEqual(total, expectedTotal)
     })
 
-    it.skip('can calculate the total of many coins', function() {
+    it('can calculate the total of many coins', function() {
       var looseChange = [0.25, 0.10, 0.25, 0.05, 1.00]
       var expectedTotal = 1.65
 

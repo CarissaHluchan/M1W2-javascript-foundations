@@ -20,13 +20,9 @@ function makePurchase(itemStock, moneyForPurchase) {
 }
 
 function collectChange(looseChange) {
-    console.log(looseChange)
     var change = 0;
-    console.log(change)
     for (var i = 0; i < looseChange.length; i++) {
-        console.log(change)
-        change += looseChange;
-        console.log(change)
+        change += looseChange[i];
     }
     return change;
 }
